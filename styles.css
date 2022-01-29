@@ -2,9 +2,9 @@ body {
   margin: 0;
   padding: 0;
   background: hsl(233, 47%, 7%);
-  display:flex;
+  display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
 }
 
 .flexbox-container {
@@ -27,7 +27,12 @@ body {
 .flexbox-item_b {
   height: 360.727px;
   width: 600px;
-  background: linear-gradient(to bottom, hsla(277, 64%, 61%, 0.2), hsla(277, 64%, 61%, 0.5)), url("images/image-header-desktop.jpg");
+  background: linear-gradient(
+      to bottom,
+      hsla(277, 64%, 61%, 0.2),
+      hsla(277, 64%, 61%, 0.4)
+    ),
+    url("images/image-header-desktop.jpg");
   background-repeat: repeat;
   background-size: cover;
   border-radius: 0 10px 10px 0;
@@ -53,7 +58,6 @@ body {
   margin: 0;
   text-align: center;
 }
-
 
 /* @media (max-width: 1000){
     .flexbox-item_a{
