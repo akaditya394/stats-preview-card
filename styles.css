@@ -2,26 +2,31 @@ body {
   margin: 0;
   padding: 0;
   background: hsl(233, 47%, 7%);
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
 }
 
 .flexbox-container {
   margin: 10rem 0 0 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap-reverse;
   justify-content: center;
+  align-content: space-around;
 }
 
 .flexbox-item_a {
-  height: 400px;
-  width: 700px;
+  height: auto;
+  width: 600px;
   background-color: hsl(244, 38%, 16%);
   border-radius: 10px 0 0 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .flexbox-item_b {
-  height: 400px;
-  width: 400px;
+  height: 360.727px;
+  width: 600px;
   background: url("images/image-header-desktop.jpg");
   background-repeat: repeat;
   background-size: cover;
@@ -32,14 +37,26 @@ body {
 .flexbox-item_a__final-div {
   display: flex;
   justify-content: space-around;
-  margin-top:60px;
+  margin-top: 60px;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .companies,
 .templates,
 .queries {
-  height: 80px;
-  width: 80px;
-  background-color: red;
+  position: relative;
+  height: 90px;
+  width: 90px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
+
+
+/* @media (max-width: 1000){
+    .flexbox-item_a{
+        width:400px;
+    }
+} */
